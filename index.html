@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="description" content="Конструктор заказа услуги 'Трансфер'. Задайте количество пассажиров , выберите транспорт, сравните цены на автомобили. Заказывайте услугу 'Трансфер' в несколько кликов." /> <!-- Дискрипция и ключевые слова -->
+	<meta name="keywords" content="#"/> <!-- Ключевые слова -->
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50501401 = new Ya.Metrika2({ id:50501401, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50501401" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  	
+	<title>Конструктор заказа трансфера</title>
+</head>
+<body>
+<form method="post" action="php/reservation.php" name="reservationform" id="reservation-form">
+<div class="cd-product-builder">
+	<header class="main-header">
+		<h1>Конструктор заказа</br><span class="h1-tit">Трансфер</span></h1>
+		
+		<nav class="cd-builder-main-nav disabled">
+			<ul>
+				<li class="active"><a href="#models">Количество пассажиров</a></li>
+				<li><a href="#colors">Выберите маршрут</a></li>
+				<li><a href="#accessories">Транспорт</a></li>
+				<li><a href="#summary">Запросить</a></li>
+			</ul>
+		</nav>
+
+		<!-- <a href="https://codyhouse.co/?p=16220" class="cd-nugget-info hide-on-mobile">Article &amp; Download</a> пригодится -->
+	</header>
+	
+			
+	
+	<div class="cd-builder-steps">
+	
+		<ul>
+			<li data-selection="models" class="active builder-step">
+				<section class="cd-step-content">
+					<header>
+						<h1>Конструктор заказа</br><span class="h1-tit">Трансфер</span></h1>
+						<!-- <span class="steps-indicator">Шаг <b>1</b> из 4</span> -->
+					</header>
+
+					<!-- <a href="https://codyhouse.co/?p=16220" class="cd-nugget-info hide-on-desktop">Article &amp; Download</a> -->
+
+					<ul class="models-list options-list cd-col-2">
+					<p class="p_title">Укажите количество пассажиров</p>
+						<li class="js-option js-radio" data-price="1-7" data-model="product-01">
+							<span class="name">От 1 до 7</br> человек</span>
+							<img class="img_car" src="img/transport/mercedes-w221564.png" alt="sedan">
+							<span class="price">Легковые</span>
+							<div id="step1_radio" class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="7-24" data-model="product-02">
+							<span class="name">От 7 до 24</br> человек</span>
+							<img src="img/test/microavtobus666.png" alt="microavtobus">
+							<span class="price">Микроавтобусы</span>
+							<div id="step1_radio" class="radio"></div>
+						</li>
+						
+						<li class="js-option js-radio" data-price="24-40" data-model="product-03">
+							<span class="name">От 24 до 40</br> человек</span>
+							<img src="img/transport/big_avtobus.png" alt="avtobus">
+							<span class="price">Малые автобусы</span>
+							<div id="step1_radio" class="radio"></div>
+						</li>
+						
+						<li class="js-option js-radio" data-price="40-55" data-model="product-04">
+							<span class="name">От 40 до 55</br> человек</span>
+							<img src="img/transport/dav.png" alt="">
+							<span class="price">Автобусы</span>
+							<div id="step1_radio" class="radio"></div>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<!-- additional content will be inserted using ajax --> 
+			<!-- дополнительный контент будет вставлен с помощью ajax -->
+		</ul>
+	</div>
+
+	<footer class="cd-builder-footer disabled step-1" id='foot_chege'>
+		<div class="selected-product">
+			<img class="img_firs_s" src="img/product01_col01.jpg" alt="Product preview">
+
+			<div class="pass">
+				<span>Количество пассажиров</span>
+				<span class="total"><b>0</b><small class="ot">  человек</small></span>
+			</div>
+			<div class="time">
+				<span>Направление</span>
+				<span class="total"><b class='inf_way'></b><small class="ot"></small></span>
+			</div>
+			<div class="fin_prise">
+				<span>Стоимость заказа</span>
+				<span class="total"><small class="ot">от         	</small><b>0</b><small class="ot"></small></span>
+			</div>
+		</div>
+		
+		<nav class="cd-builder-secondary-nav">
+			<ul>
+				<li class="next nav-item">
+					<ul>
+						<li class="visible"><a href="#0">Направление</a></li>
+						<li><a href="#0">Транспорт</a></li>
+						<li><a href="#0">Итог</a></li>
+						<li class="buy"><button class="but_sub" type="submit">Запросить</button></li>
+					</ul>
+				</li>
+				<li class="prev nav-item">
+					<ul>
+						<li class="visible"><a href="#0"></a></li>
+						<li><a href="#0">Пассажиры</a></li>
+						<li><a href="#0">Направление</a></li>
+						<li><a href="#0">Запросить</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+</form>
+		<span class="alert">Пжалуйста выбирите количество пассажиров!</span>
+	</footer>
+</div>
+<script src='js/jquery.min.js'></script>
+<script src='js/pluse_min.js'></script>
+<!-- <script src="js/jquery-3.0.0.min.js"></script> -->
+<!-- <script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script> -->
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+			document.ondragstart = noselect; 
+			document.onselectstart = noselect; 
+			document.oncontextmenu = noselect; 
+			function noselect() {return false;} 
+</script>
+</body>
+</html>

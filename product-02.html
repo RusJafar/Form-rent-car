@@ -1,0 +1,368 @@
+<li data-selection="colors" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Выберите маршрут</h1>
+			<!-- <span class="steps-indicator">Шаг <b>2</b> из 4</span> -->
+		</header>
+		
+		<!-- <ul class="cd-product-previews">
+			<li class="selected"><img src="img/transport/1-10.jpg" alt="Product Preview" class="product-preview"/></li>
+			<li><img src="img/transport/2-10.png" alt="Product Preview" class="product-preview"/></li>
+			<li><img src="img/transport/2-10.png" alt="Product Preview" class="product-preview"/></li>
+		</ul> 
+ -->
+		<!-- <ul class="cd-product-customizer">
+			<li data-content="White - $0" data-price="0" class="selected"><a data-color="black" href="#0">White - $0</a></li>
+			<li data-content="Mineral Grey - $550" data-price="550"><a data-color="grey" href="#0">Mineral Grey - $550</a></li>
+			<li data-content="Orange Metallic - $550" data-price="550"><a data-color="orange" href="#0">Orange Metallic - $550</a></li>
+		</ul> -->
+		<div class="cd-product-customizer">
+			<p class="p_title">Выберите маршрут</p>
+		</div>
+		<div class="cd-product-customizer">
+			
+			<select id="contenInput">
+				<option value="0">Выберите маршрут</option>
+				<option value="1">Калининград-аэропорт Храброво</option>
+				<option value="2">Калининград-Зеленоградск</option>
+				<option value="3">Калининград-Светлогорск</option>
+				<option value="4">Калининград-Янтарный</option>
+				<option value="5">Калининград-Гданьск </option>
+				<option value="6">Калининград-Ольштын </option>
+				<option value="7">Калининград-Варшава </option>
+				<option value="8">Калининград-Вильнюс </option>
+				<option value="9">Калининград-Рига </option>
+				<option value="10">Иное направление </option>
+
+			</select>
+			<div class='ceter_widow'>
+		<div class="changeWay">
+			<div class='section_way'>
+			<small class="ot">Откуда:</small>
+			<span class="start"><p></p></span>
+			</div>
+			<span title='Сменить направление' class="chenge"><img style="width: 4em; margin-top: 8px;" src="img/arrow_way.png"></span>
+			<div class='section_way'>
+			<small class="ot">Куда:</small>
+			<span class="finish"><p></p></span>
+			</div>
+			
+		</div>
+			<div class='coll_me' style='display: none;'>
+				<p class="p_for_coll">Если необходимого Вам направления нет в списке, свяжитесь с нами по телефону</br> 
+				<a class='initial' href="tel:+7 (999) 999-999"><span id="p_coll1">+7 (999) 999-999</span></p></a>
+				<p id="p_coll">Наши специалисты подберут для Вас транспорт.</p> 
+			
+			</div>	
+			<div class='coll_me_bt' style='display: none;' >
+				<a class='initial' href="tel:+7 (999) 999-999">
+					<span title='Сменить направление' class="coll"><img style="width: 4rem; margin-top: 4px;" src="img/call_fone.png"></span>
+				</a>
+			</div>
+		</div>
+		</div>
+	</section>
+</li>
+
+<li data-selection="accessories" class="builder-step first-load">
+<div class="class_filt">
+		<!-- 	<p class="p_title">Выберите автомобиль</p> -->
+			<button class="all" id="all">Все</button>
+			<button class="standart" id="standart">Комфорт</button>
+			<button class="bissnes"id="bissnes" >Бизнес</button>
+			
+		</div>
+	<section class="cd-step-content">
+		<header>
+		<!-- 	<h1>Выбор автомобиля</h1> -->
+		<!-- 	<span class="steps-indicator">Шаг <b>3</b> из 4</span> -->
+		</header>
+		
+		<div class="cd-product-customizer">
+			<!-- <p class="p_title">Выберите автомобиль</p> -->
+		</div>
+		<!-- rem_class - НЕОБХОДИМ ДЛЯ УДАЛЕНИЯ И ДОБАВЛЕНИЯ ОБЬЕКТОВ С контентом noway js:main.351 -->
+		<ul class="accessories-list options-list">
+			<li class="rem_class js-option stan" data-price="900">
+				<img class="avto_img" src="img/transport/mersedes_sp_7.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="black" href="#0">Белый</a>
+				<p>Мерседес Спринтер </p><small class="quantity">(2 единицы)</small>
+				<span class="price" id='1' style="display: none;">2 000 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">2 000 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">2 500 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">3 000 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">9 000 рублей</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">9 000 рублей</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">18 000 рублей</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">18 000 рублей</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">18 000 рублей</span> <!-- Калининград-Рига -->
+				<b class='place'>7</b>+1
+				<div class="check"></div>
+			</li>
+			<li class="rem_class js-option stan" id="noway" data-price="1100">
+				<img class="avto_img" src="img/transport/biznes_blue.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="blue" href="#0">Синий</a>
+				<p>Мерседес Спринтер</p>
+				<span class="price" id='1' style="display: none;">3 000 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 000 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">3 500 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">3 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">noway</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">noway</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">noway</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">noway</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">noway</span> <!-- Калининград-Рига -->
+				<b class='place'>17</b>+1
+				<div class="check"></div>
+			</li>
+			<li class="rem_class js-option stan" data-price="1100">
+				<img class="avto_img" src="img/transport/sprinter-wite.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p><small class="quantity">(2 единицы)</small>
+				<span class="price" id='1' style="display: none;">3 500 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 500 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">4 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">16 000 рублей</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">16 000 рублей</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">23 000 рублей</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">23 000 рублей</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">23 000 рублей</span> <!-- Калининград-Рига -->
+				<b class='place'>19</b>+1
+				<div class="check"></div>
+			</li>
+			<li class="rem_class js-option stan" id="noway" data-price="1100">
+				<img class="avto_img" src="img/transport/mers_sp-20.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">серый/белый/красный</a>
+				<p>Мерседес Спринтер</p> <small class="quantity">(4 единицы)</small>
+				<span class="price" id='1' style="display: none;">3 500 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 500 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">4 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">noway</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">noway</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">noway</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">noway</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">noway</span> <!-- Калининград-Рига -->
+				<b class='place'>20</b>+1
+				<div class="check"></div>
+			</li>
+			
+			<li class="rem_class js-option stan" data-price="1100">
+				<img class="avto_img" src="img/transport/wv.png" alt="">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Volkswagen Crafter</p>
+				<span class="price" id='1' style="display: none;">3 500 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 500 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">4 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">16 000 рублей</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">16 000 рублей</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">23 000 рублей</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">23 000 рублей</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">23 000 рублей</span> <!-- Калининград-Рига -->
+				<b class='place'>20</b>+1
+				<div class="check"></div>
+			</li>
+
+			<li class="rem_class js-option bis" data-price="1200">
+				<img class="avto_img" src="img/transport/sprinter-22-24.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">серый/белый</a>
+				<p>Мерседес Спринтер </p><small class="quantity">(3 единицы)</small>
+				<span class="price" id='1' style="display: none;">3 700 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 700 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 500 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">5 000 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">16 000 рублей</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">16 000 рублей</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">25 000 рублей</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">25 000 рублей</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">25 000 рублей</span> <!-- Калининград-Рига -->
+				<b class='place'>20</b>+1
+				<div class="check"></div>
+			</li>
+			<li class="rem_class js-option bis" data-price="1200">
+				<img class="avto_img" src="img/transport/sprinter-22-24.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p>
+				<span class="price" id='1' style="display: none;">3 700 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 700 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 500 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">5 000 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">16 000 рублей</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">16 000 рублей</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">25 000 рублей</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">25 000 рублей</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">25 000 рублей</span> <!-- Калининград-Рига -->
+				<b class='place'>22</b>+1
+				<div class="check"></div>
+			</li>
+
+			<li class="rem_class js-option bis" id="noway" data-price="1150">
+				<img class="avto_img" src="img/transport/sprinter-22-24.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p>
+				<span class="price" id='1' style="display: none;">3 700 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 700 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">4 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">noway</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">noway</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">noway</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">noway</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">noway</span> <!-- Калининград-Рига -->
+				<b class='place'>11</b>+1
+				<div class="check"></div>
+			</li>
+			
+			
+			<li class="rem_class js-option bis" id="noway" data-price="1150">
+				<img class="avto_img" src="img/transport/sprinter-22-24.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p>
+				<span class="price" id='1' style="display: none;">3 700 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 700 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">4 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">noway</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">noway</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">noway</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">noway</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">noway</span> <!-- Калининград-Рига -->
+				<b class='place'>14</b>+1
+				<div class="check"></div>
+			</li>
+				
+		
+			<li class="rem_class js-option stan" id="noway" data-price="1000">
+				<img class="avto_img" src="img/transport/sprinter-wite.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p>
+				<span class="price" id='1' style="display: none;">3 700 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">3 700 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">4 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">4 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">noway</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">noway</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">noway</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">noway</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">noway</span> <!-- Калининград-Рига -->
+				<b class='place'>	15</b>+1
+				<div class="check"></div>
+			</li>
+			
+			<li class="rem_class js-option stan"  data-price="1100">
+				<img class="avto_img" src="img/transport/sprinter-wite.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p> <small class="quantity">(2 единицы)</small>
+				<span class="price" id='1' style="display: none;">4 000 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">4 500 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">5 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">5 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">18 000 рублей</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">18 000 рублей</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">26 000 рублей</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">26 000 рублей</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">26 000 рублей</span> <!-- Калининград-Рига -->
+				<b class='place'>18</b>+1
+				<div class="check"></div>
+			</li>
+			
+		
+			
+			<li class="rem_class js-option bis" id="noway" data-price="1300">
+				<img class="avto_img" src="img/transport/sprinter-22-24.png" alt="Мерседес Спринтер">
+				<a class='place' data-color="white" href="#0">Белый</a>
+				<p>Мерседес Спринтер</p>
+				<span class="price" id='1' style="display: none;">4 500 рублей</span> <!-- Калининград-аэропорт Храброво -->
+				<span class="price" id='2' style="display: none;">4 500 рублей</span> <!-- Калининград-Зеленоградск -->
+				<span class="price" id='3' style="display: none;">5 000 рублей</span> <!-- Калининград-Светлогорск -->
+				<span class="price" id='4' style="display: none;">5 500 рублей</span> <!-- Калининград-Янтарный -->
+				<span class="price" id='5' style="display: none;">noway</span> <!-- Калининград-Гданьск -->
+				<span class="price" id='6' style="display: none;">noway</span> <!-- Калининград-Ольштын -->
+				<span class="price" id='7' style="display: none;">noway</span> <!-- Калининград-Варшава -->
+				<span class="price" id='8' style="display: none;">noway</span> <!-- Калининград-Вильнюс -->
+				<span class="price" id='9' style="display: none;">noway</span> <!-- Калининград-Рига -->
+				<b class='place'>24</b>+1
+				<div class="check"></div>
+			</li>
+		</ul>
+	</section>
+</li>
+
+<li data-selection="summary" class="builder-step first-load">
+
+	<section class="cd-step-content">
+		<header>
+			<h1>Оформить заказ:</h1>
+			<!-- <span class="steps-indicator">Шаг <b>4</b> из 4</span> -->
+		</header>
+		
+		<ul class="summary-list">
+			<li data-summary="accessories">
+				<h1 class="h1-tit">Оформить заказ:</h1>
+
+				<img src="img/test/microavtobus666.png" alt="" class="product-preview">
+				
+				<h3 class="car_model"></h3>
+				
+				<p>
+					
+				</p>
+			</li>
+
+			<li data-summary="colors">
+				<h2>Цвет автомобиля:</h2>
+				
+				<span class="summary-color">
+					<em class="color-swatch" data-color="red"></em>
+					<em class="color-label"></em>
+				</span>
+			</li>
+
+			<li data-summary="accessories">
+				<h2>Трансфер:</h2>
+
+				<ul class="summary-accessories">
+					<li class="time_travel">
+						<p value="0">0</p>
+					</li>
+
+					<li class="summ_travel">
+						<p value="0">0</p>
+					</li>
+				</ul>
+			</li>
+			<li data-summary="data_form">
+					<p>
+						<input class="input_form" id="name" placeholder="Имя" name="name"/> <!-- type="number"  contact -->
+					</p>
+					<p>
+						<input class="input_form" id="contact" placeholder="Телефон/Email" required name="contact"/>
+					</p>
+					<p>
+					<span style="color: #2563c3; font-size: 1.3em;">Количество пассажиров:</span>
+						<input type='number' min='1' max='5' class='inp_place' name="passenger"/>
+					</p>
+					<p>
+					<span style="color: #2563c3; font-size: 1.3em;">Дата трансфера:</span>
+						<input type="date" class="input_form" id="datetime" placeholder="Дата трансфера" name="datetime"/>
+					</p>
+					<p>
+						<!-- <input class="input_form" id="masege" placeholder="Комментарий" name="masege"/> -->
+						<textarea style="height:150px; margin: 10px;" class="input_form" id="masege" placeholder="Дополнительная информация" name="masege" cols="40" rows="3"></textarea>						
+					</p>
+					
+				<div style="display: none">  <!--  -->
+						<!-- Data for form display: none -->
+						<!-- productF, breedF,stationQ,arrangementF, keepF,feedingF,distributionF,staffF,automaticF -->
+						<input id="inp" name="inp" value=""></input>
+						<input id="price" name="price" value=""></span>  
+						<input id="rent_car" name="rent_car" value=""></input>  
+						
+				</div>
+			</li>
+	
+		</ul>
+	</section>
+</li>
